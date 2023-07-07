@@ -1,2 +1,2 @@
-import TriStateCheckbox from './components/elements/TriStateCheckbox.vue'
-export { TriStateCheckbox }
+import ModeUi from './components/TriStateCheckbox.vue'
+export { ModeUi }
