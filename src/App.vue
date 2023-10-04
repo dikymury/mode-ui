@@ -2,9 +2,9 @@
   <mode-ui v-model="val" label="Vite + Vue" />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
-import modeUi from './components/ModeUi.vue'
+import ModeUi from './components/ModeUi.vue'
 
 const val = ref(false)
 </script>
