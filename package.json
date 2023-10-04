@@ -24,18 +24,17 @@
     "checkbox",
     "material",
     "material-ui",
-    "tri-state-checkbox",
     "vue3",
-    "vue",
+    "mode-ui",
     "vuejs"
   ],
-  "main": "./dist/vue-tri-state-checkbox.umd.cjs",
-  "module": "./dist/vue-tri-state-checkbox.js",
+  "main": "./dist/mode-ui.umd.cjs",
+  "module": "./dist/mode-ui.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vue-tri-state-checkbox.js",
-      "require": "./dist/vue-tri-state-checkbox.umd.cjs"
+      "import": "./dist/mode-ui.js",
+      "require": "./dist/mode-ui.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
