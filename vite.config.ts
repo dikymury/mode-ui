@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'ModeUi',
-      fileName: 'mode-ui'
+      name: 'TriStateCheckbox',
+      fileName: 'vue-tri-state-checkbox'
     },
     rollupOptions: {
       external: ['vue'],
