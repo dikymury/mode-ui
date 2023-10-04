@@ -1,10 +1,10 @@
 <template>
-  <tri-state-checkbox v-model="val" label="Vite + Vue" />
+  <mode-ui v-model="val" label="Vite + Vue" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import TriStateCheckbox from './components/TriStateCheckbox.vue'
+import modeUi from './components/ModeUi.vue'
 
 const val = ref(false)
 </script>
