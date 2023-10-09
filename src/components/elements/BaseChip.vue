@@ -1,21 +1,26 @@
-<script setup>
-import { onMounted, ref } from "vue"
+<template>
+  <div
+    :class="[style, width, height]"
+    class="flex text-[10px]/[15px] text-white px-2 rounded-full whitespace-nowrap"
+  >
+    <slot />
+  </div>
+</template>
 
-const props = defineProps({
-  color: {
-    type: String,
-    default: "primary"
-  },
-  width: {
-    type: String,
-    default: "w-fit"
-  },
-  height: {
-    type: String,
-    default: "h-[15px]"
-  }
+<script setup lang="ts">
+import { onMounted, ref } from "vue"
+export interface Props {
+  color: string
+  width: string
+  height: string
+}
+const props = withDefaults(defineProps<Props>(), {
+  color: "primary",
+  width: "w-fit",
+  height: "h-[15px]"
 })
-const style = ref("")
+
+const style = ref<string>("")
 onMounted(() => {
   switch (props.color) {
     case "primary":
@@ -48,11 +53,3 @@ onMounted(() => {
   }
 })
 </script>
-<template>
-  <div
-    :class="[style, width, height]"
-    class="flex text-[10px]/[15px] text-white px-2 rounded-full whitespace-nowrap"
-  >
-    <slot />
-  </div>
-</template>

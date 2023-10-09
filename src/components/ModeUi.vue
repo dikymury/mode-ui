@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, watch } from "vue"
 
 const props = withDefaults(
   defineProps<{
@@ -24,12 +24,12 @@ const props = withDefaults(
     color?: string
   }>(),
   {
-    color: '#2f4fef'
+    color: "#2f4fef"
   }
 )
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: boolean | null): void
+  (e: "update:modelValue", value: boolean | null): void
 }>()
 
 const val = ref<boolean | null>(false)
@@ -38,7 +38,7 @@ const change = () => {
   if (val.value === false) val.value = null
   else if (val.value === null) val.value = true
   else val.value = false
-  emit('update:modelValue', val.value)
+  emit("update:modelValue", val.value)
 }
 
 watch(

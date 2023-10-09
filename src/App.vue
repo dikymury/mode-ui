@@ -62,10 +62,10 @@
           <div class="relative w-full mb-2">
             <h4 class="text-sm mb-2">Demo :</h4>
             <div class="flex gap-2 flex-wrap">
-              <base-button iconRight="IconStatus">Submit</base-button>
+              <!-- <base-button iconRight="IconStatus">Submit</base-button>
               <base-button iconRight="IconStatus" outlined>Submit</base-button>
               <base-button color="error">Cancel</base-button>
-              <base-button color="error" outlined>Cancel</base-button>
+              <base-button color="error" outlined>Cancel</base-button> -->
             </div>
           </div>
           <div class="relative w-full">
@@ -78,15 +78,11 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue"
-// import ModeUi from "./components/ModeUi.vue"
+<script setup lang="ts">
 import BaseAvatar from "./components/elements/BaseAvatar.vue"
 import BaseChip from "./components/elements/BaseChip.vue"
-import BaseBadge from "./components/elements/BaseBadge.vue"
-import BaseButton from "./components/elements/BaseButton.vue"
-const val = ref(false)
-// images
-import imgUser1 from "@/assets/images/components/user/user1.jpg"
-import imgUser2 from "@/assets/images/components/user/user-none.png"
+// import * as BaseBadge from "./components/elements/BaseBadge.vue"
+
+const imgUser1 = require("./assets/images/components/user/user1.jpg")
+const imgUser2 = require("./assets/images/components/user/user-none.png")
 </script>
