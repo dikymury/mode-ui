@@ -5,7 +5,9 @@
     <slot />
   </div>
 </template>
-
+<script setup lang="ts">
+import "./../../assets/styles.css"
+</script>
 <style>
 .base-avatar img {
   object-fit: cover;

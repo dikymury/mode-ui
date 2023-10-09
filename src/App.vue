@@ -82,7 +82,6 @@
 import BaseAvatar from "./components/elements/BaseAvatar.vue"
 import BaseChip from "./components/elements/BaseChip.vue"
 // import * as BaseBadge from "./components/elements/BaseBadge.vue"
-
-const imgUser1 = require("./assets/images/components/user/user1.jpg")
-const imgUser2 = require("./assets/images/components/user/user-none.png")
+const imgUser1 = new URL("./assets/images/components/user/user1.jpg", import.meta.url).href
+const imgUser2 = new URL("./assets/images/components/user/user-none.png", import.meta.url).href
 </script>
